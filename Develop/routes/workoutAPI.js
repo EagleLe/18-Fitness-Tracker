@@ -11,11 +11,16 @@ router.get("/api/workouts", (req, res) => {
         .catch(err => {
             res.status(400).json(err);
         });
-
-
-
-
 });
+
+router.post("/api/workouts/", (req, res) => {
+    workout.create(req.body).then((dbWorkout) => {
+        res.json(dbWorkout);
+    }).catch(err => {
+        res.status(400).json(err);
+    });
+});
+
 router.get("/api/workouts/range", ({}, res) => {
     workout.find({}).then((dbWorkout) => {
         res.json(dbWorkout);
@@ -31,6 +36,7 @@ router.post("/api/workouts/", (req, res) => {
         res.status(400).json(err);
     });
 });
+
 router.get("/exercise", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/exercise.html"));
 });
