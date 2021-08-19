@@ -3,3 +3,4 @@ This application will track your cardio or resistance workouts through the week.
 
 #Screenshot of NODE app.js 
 
+![FITNESS](https://user-images.githubusercontent.com/85507148/130076937-d762053a-67db-4464-8cd5-2537ddf6d495.png)
