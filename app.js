@@ -1,7 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const logger = require("morgan");
-const url = "mongodb://localhost/workout";
+const url = process.env.MONGODB_URI;
 
 const app = express();
 
