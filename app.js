@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const logger = require("morgan");
 const url = "mongodb://localhost/workout";
-const PORT = process.env.PORT || 5000;
+
 const app = express();
 
 app.use(logger("dev"));
@@ -13,7 +13,7 @@ app.use(express.static("public"));
 
 
 mongoose.connect(url, { useNewUrlParser: true, useFindAndModify: false });
-app.use(require('./routes/workoutApi.js'));
+app.use(require('./routes/workoutApi'));
 //require("./routes/workoutApi")(app);
 
 // const con = mongoose.connection;
