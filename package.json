@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js",
     "watch": "nodemon app.js",
-    "seed": "node seeders/seed.js"
+    "seed": "node seeders/app.js"
   },
   "author": "",
   "license": "ISC",
