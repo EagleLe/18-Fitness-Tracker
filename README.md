@@ -3,7 +3,7 @@ This application will track your cardio or resistance workouts through the week.
 
 # Deployment Link: 
 
-https://serene-mountain-95068.herokuapp.com/
+https://eagle-fitness-tracker.herokuapp.com/
 
 # Screenshot
 
